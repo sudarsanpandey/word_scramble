@@ -25,8 +25,8 @@ namespace word_scramble
             MySql.Data.MySqlClient.MySqlConnection conn;
             string myConnectionString;
 
-            myConnectionString = "server=sql5.freesqldatabase.com;uid=sql562297;" +
-                "pwd=hC6!zL4!;database=sql562297;";
+            myConnectionString = "server=ubuntu-db.madelia.org;uid=wscramble;" +
+                "pwd=456123;database=word_scramble;";
 
             try
             {
@@ -64,8 +64,8 @@ namespace word_scramble
             MySql.Data.MySqlClient.MySqlConnection conn;
             string myConnectionString;
 
-            myConnectionString = "server=sql5.freesqldatabase.com;uid=sql562297;" +
-                "pwd=hC6!zL4!;database=sql562297;";
+            myConnectionString = "server=ubuntu-db.madelia.org;uid=wscramble;" +
+                "pwd=456123;database=word_scramble;";
 
             try
             {

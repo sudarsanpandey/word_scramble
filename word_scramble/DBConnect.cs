@@ -17,6 +17,7 @@ namespace word_scramble
         private string database;
         private string uid;
         private string password;
+        private string table;
 
         //Constructor
         public DBConnect()
@@ -27,10 +28,11 @@ namespace word_scramble
         //Initialize values
         private void Initialize()
         {
-            server = "localhost";
-            database = "words_meanings";
-            uid = "root";
-            password = "Hello123";
+            server = "ubuntu-db.madelia.org";
+            database = "word_scramble";
+            table = "words_scramble";
+            uid = "wscramble";
+            password = "456123";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
@@ -85,7 +87,7 @@ namespace word_scramble
         //Insert statement
         public void Insert(string word, string meaning, string usage)
         {
-            string query = "INSERT INTO wordsnmeaningstable (word, meaning, usage) VALUES('"+word+"', '"+meaning+"','"+usage+"')";
+            string query = "INSERT INTO"+table+" (word, meaning, usage) VALUES('"+word+"', '"+meaning+"','"+usage+"')";
 
             //open connection
             if (this.OpenConnection() == true)
@@ -104,7 +106,7 @@ namespace word_scramble
         //Update statement
         public void Update(string word, string meaning, string usage)
         {
-            string query = "UPDATE wordsnmeaningstable SET meaning='"+meaning+"', usage='"+usage+"' WHERE word='"+word+"'";
+            string query = "UPDATE "+table+" SET meaning='"+meaning+"', usage='"+usage+"' WHERE word='"+word+"'";
 
             //Open connection
             if (this.OpenConnection())
@@ -127,7 +129,7 @@ namespace word_scramble
         //Delete statement
         public void Delete(string word)
         {
-            string query = "DELETE FROM wordsnmeaningstable WHERE word='"+word+"'";
+            string query = "DELETE FROM "+table+" WHERE word='"+word+"'";
 
             if (this.OpenConnection() == true)
             {
@@ -140,7 +142,7 @@ namespace word_scramble
         //Select statement
         public List<string>[] Select()
         {
-            string query = "SELECT * FROM wordsnmeaningstable";
+            string query = "SELECT * FROM "+table;
 
             //Create a list to store the result
             List<string>[] list = new List<string>[3];
@@ -184,7 +186,7 @@ namespace word_scramble
         //Count statement
         public int Count()
         {
-            string query = "SELECT Count(*) FROM wordsnmeaningstable";
+            string query = "SELECT Count(*) FROM "+table;
             int Count = -1;
 
             //Open Connection
@@ -247,7 +249,7 @@ namespace word_scramble
             }
             catch (IOException ex)
             {
-                MessageBox.Show("Error , unable to backup!");
+                MessageBox.Show("Error , unable to backup!"+ex.ToString());
             }
         }
 
@@ -280,7 +282,7 @@ namespace word_scramble
             }
             catch (IOException ex)
             {
-                MessageBox.Show("Error , unable to Restore!");
+                MessageBox.Show("Error , unable to Restore!"+ex.ToString());
             }
         }
     }

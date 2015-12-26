@@ -14,10 +14,12 @@ namespace word_scramble
     
     public partial class Form1 : Form
     {
-        int row = 16;
-        int column = 16;
+        int row = 12;
+        int column = 12;
 
         int w_h = 50;
+
+        int word_limit = 10;
 
         string[] words;
         string[] meanings;
@@ -49,14 +51,14 @@ namespace word_scramble
             MySql.Data.MySqlClient.MySqlConnection conn;
             string myConnectionString;
 
-            myConnectionString = "server=sql5.freesqldatabase.com;uid=sql562297;" +
-                "pwd=hC6!zL4!;database=sql562297;";
+            myConnectionString = "server=ubuntu-db.madelia.org;uid=wscramble;" +
+                "pwd=456123;database=word_scramble;";
 
             try
             {
                 conn = new MySql.Data.MySqlClient.MySqlConnection(myConnectionString);
                 conn.Open();
-                string statement = "SELECT * from words_scramble";
+                string statement = "SELECT * from words_scramble order by rand() limit "+word_limit;
                 MySqlCommand cmd = new MySqlCommand(statement, conn);
                 MySqlDataReader rdr = cmd.ExecuteReader();
 

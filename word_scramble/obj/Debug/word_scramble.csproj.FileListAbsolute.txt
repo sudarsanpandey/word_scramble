@@ -29,3 +29,18 @@ C:\Users\pandeyBijaya\Google Drive\word_scramble\word_scramble\obj\Debug\word_sc
 C:\Users\pandeyBijaya\Google Drive\word_scramble\word_scramble\obj\Debug\word_scramble.Properties.Resources.resources
 C:\Users\pandeyBijaya\Google Drive\word_scramble\word_scramble\obj\Debug\word_scramble.Typing_Tutor.resources
 C:\Users\pandeyBijaya\Google Drive\word_scramble\word_scramble\obj\Debug\word_scramble.csproj.GenerateResource.Cache
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\bin\Debug\word_scramble.exe.config
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\obj\Debug\word_scramble.exe
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\obj\Debug\word_scramble.pdb
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\bin\Debug\Form1.resx
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\bin\Debug\Form1.cs
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\bin\Debug\Form1.Designer.cs
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\bin\Debug\word_scramble.exe
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\bin\Debug\word_scramble.pdb
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\obj\Debug\word_scramble.csprojResolveAssemblyReference.cache
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\obj\Debug\word_scramble.Entry.resources
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\obj\Debug\word_scramble.Form1.resources
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\obj\Debug\word_scramble.Main.resources
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\obj\Debug\word_scramble.Properties.Resources.resources
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\obj\Debug\word_scramble.Typing_Tutor.resources
+C:\Users\pandeyBijaya\Desktop\GDrive01\word_scramble\word_scramble\obj\Debug\word_scramble.csproj.GenerateResource.Cache
